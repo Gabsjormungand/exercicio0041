@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, aux
+
+    escreva("Informe um valor para a variável A: ")
+    leia(a)
+
+    escreva("Informe um valor para a variável B: ")
+    leia(b)
+
+    limpa()
+
+    escreva("Variáveis antes da troca: \n")
+    escreva("A = ", a, "; B = ", b, "\n")
+
+    /*
+     * Realiza a troca dos valores contidos nas variáveis. È necessário utilizar
+     * a variável 'aux para armazenar temporariamente o valor contido 'a', 
+     * caso contrário este valor será perdio
+     */
+
+    aux = a 
+    a = b
+     b = aux
+
+     escreva("\n")
+
+     escreva("Variáveis após a troca: \n")
+     escreva("A = ", a, "; B = ", b, "\n")
+  }
+}
